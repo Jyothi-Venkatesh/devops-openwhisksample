@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title> <%= title %>  </title>
+        
+    </head>
+    <body> 
+     <%include ./common/header.html %>
+     <br>
+     <table>
+             <th>Name</th>
+             <th>Year</th>
+
+             <% records.forEach(function(product) { %>
+             <tr>
+                 <td>
+                    
+                       <a href="/products/productdetails/<%= product.doc._id %>">  <%= product.doc.name %> </a>
+                 </td>
+                 <td>
+                     <%= product.doc.year %>
+                 </td>
+               
+             </tr>
+             <% }) %>
+
+         </table> 
+            <%include ./common/footer.html %>
+    </body>
+    </html> 

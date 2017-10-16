@@ -1,0 +1,23 @@
+{
+  "name": "sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "cloudant": "^1.8.0",
+    "ejs": "^2.5.7",
+    "express": "^4.16.1",
+    "nodemon": "^1.12.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start" : "nodemon renderinghtml.js"
+  },
+  "engines": {
+    "node": "0.12.7",
+    "npm": "2.7.4"
+  },
+  "author": "jyothi",
+  "license": "ISC"
+}
